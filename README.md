@@ -10,7 +10,7 @@ There are three different computer-based calculations that were done in that pap
 
 We will discuss all three of these seperately.
 
-# Dihedral combintorics
+# Dihedral combinatorics
 
 The main underlying tool for computations, even beyond dihedral type, is du Cloux's Coxeter program: [click](http://math.univ-lyon1.fr/~ducloux/coxeter/coxeter3/english/coxeter3_e.html). A guide how to run the program can be found on that page.
 
@@ -77,7 +77,7 @@ Compared to the conventions of the paper, these are flipped top-to-bottom, so th
 
 All cell calculations in the picture can be verified similarly. We refer to the documentation of the semigroup package for all the relevant commands one can use.
 
-# Gram matrix combintorics
+# Gram matrix combinatorics
 
 This part is a bit messy, my apologies, and I never found the time to clean it. I attached the files in a .zip, so feel free to play with them.
 
