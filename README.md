@@ -48,9 +48,34 @@ Note hereby the symmetry $v\leftrightarrow v^{-1}$, and the program only gives t
 
 All calculations in Section 3 of the paper can be verified using similar calculations.
 
-# Cell combintorics
+# Cell combinatorics
 
-To do
+This part is based on GAP [click](https://www.gap-system.org/) in particular the semigroup package [click](https://www.gap-system.org/Packages/semigroups.html). The manual can be found here [click](https://docs.gap-system.org/pkg/semigroups/doc/manual.pdf).
+
+After installing GAP start it and run
+
+```python
+   LoadPackage("semigroups");
+   S := FullTransformationMonoid(5);
+   DotString(S);
+   FileString("t5.dot", DotString(S)); 
+```
+
+This creates a dot string diagram of the cells for the full transformation monoid on 5 strands. To convert a dot string diagram to a svg use
+
+```python
+   dot -Tsvg t5.dot -Tsvg -o t5.svg
+```
+
+in the terminal if you are a unix user. Otherwise, use for example an online converter to get your favorit picture file.
+
+You will get the following picture:
+
+![T5cells](https://github.com/dtubbenhauer/Sandcell/blob/main/t5.png)
+
+Compared to the conventions of the paper, these are flipped top-to-bottom, so that the 1-1 cell is the bottom cell in the paper.
+
+All cell calculations in the picture can be verified similarly. We refer to the documentation of the semigroup package for all the relevant commands one can use.
 
 # Gram matrix combintorics
 
