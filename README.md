@@ -54,7 +54,7 @@ To do
 
 # Gram matrix combintorics
 
-To do
+This part is a bit messy, my apologies, and I never found the time to clean it. I attached the files in a .zip, so feel free to play with them.
 
 # Contact
 
