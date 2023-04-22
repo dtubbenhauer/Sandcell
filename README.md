@@ -12,7 +12,41 @@ We will discuss all three of these seperately.
 
 # Dihedral combintorics
 
-To do
+The main underlying tool for computations, even beyond dihedral type, is du Cloux's Coxeter program: [click](http://math.univ-lyon1.fr/~ducloux/coxeter/coxeter3/english/coxeter3_e.html). A guide how to run the program can be found on that page.
+
+This amazing piece of work can do a lot of computations related to Coxeter groups, e.g. after starting the program type
+
+```python
+   help
+```
+
+and you get all relevant commands:
+
+![Coxeter](https://github.com/dtubbenhauer/Sandcell/blob/main/coxeter.png)
+
+Now, let us get started. Type
+
+```python
+   type
+   I
+   6
+```
+
+which starts type $I_2(6)$ - the dihedral group of the 6-gon.
+
+Enter
+
+```python
+   cprod
+   1212
+   21212
+```
+
+which computes the product of the KL elements $b_{1212}$ and $b_{21212}$. The ouput is $(v)c(12)+(v^3+2v)c(121212)$ (the program uses c for the KL elements), which says $b_{1212}b_{21212}=(v+v^{-1})b_{12}+(v^3+2v+2v^{-1}+v^{-3})b_{121212}$.
+
+Note hereby the symmetry $v\leftrightarrow v^{-1}$, and the program only gives the nonnegative powers.
+
+All calculations in Section 3 of the paper can be verified using similar calculations.
 
 # Cell combintorics
 
